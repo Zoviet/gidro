@@ -58,7 +58,7 @@
 ## Установка:
 
 ```
-composer require zoviet/ges
+composer require zoviet/gidro
 
 ```
 
