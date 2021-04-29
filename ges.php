@@ -53,7 +53,11 @@ class ges {
 	//результаты разбора
 	public $result;
 	
-	public function __construct($name=NULL) {	
+	//дата, за которую получать данные
+	public $date;
+	
+	public function __construct($date=NULL,$name=NULL) {	
+		if (!empty($date)) $this->url = $this->url.'?date='.$date;		
 		if (!empty($name)) return $this->get($name);
 	}	
 	
